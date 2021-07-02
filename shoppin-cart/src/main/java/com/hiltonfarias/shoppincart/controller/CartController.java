@@ -24,7 +24,7 @@ public class CartController {
         Optional<Cart> savedCart = cartRepository.findById(id);
         Cart cart;
         if (savedCart.equals(Optional.empty())) {
-            cart = new Cart();
+            cart = new Cart(id);
         } else {
             cart = savedCart.get();
         }

@@ -15,6 +15,10 @@ public class Cart {
     public Cart() {
     }
 
+    public Cart(Integer id) {
+        this.id = id;
+    }
+
     public Integer getId() {
         return id;
     }
